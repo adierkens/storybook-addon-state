@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A storybook addon to keep state",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "ava"
