@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A storybook addon to keep state",
   "main": "dist/index.js",
   "files": [
