@@ -12,6 +12,10 @@
   },
   "author": "Adam Dierkens <adam@dierkens.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adierkens/storybook-addon-state.git"
+  },
   "devDependencies": {
     "@storybook/addons": "~5.0.1",
     "@storybook/core-events": "~5.0.1",
