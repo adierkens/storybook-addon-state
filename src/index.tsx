@@ -1,5 +1,5 @@
-import addons from "@storybook/addons";
-import { FORCE_RE_RENDER } from "@storybook/core-events";
+import addons from '@storybook/addons';
+import { FORCE_RE_RENDER } from '@storybook/core-events';
 
 function forceReRender() {
   addons.getChannel().emit(FORCE_RE_RENDER);
