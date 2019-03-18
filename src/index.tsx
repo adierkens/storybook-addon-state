@@ -9,7 +9,6 @@ const stores: {
   [name: string]: any;
 } = {};
 
-
 export default function state<T>(
   name: string,
   store: T
