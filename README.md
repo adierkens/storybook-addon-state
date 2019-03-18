@@ -11,18 +11,16 @@ yarn add storybook-addon-state
 ### Usage
 
 ```jsx
-import { storiesOf } from "@storybook/react";
-import state from "storybook-addon-state";
+import { storiesOf } from '@storybook/react';
+import useState from 'storybook-addon-state';
 
-storiesOf("FooBar", module).add("I get state", () => {
-  const { store, set } = state("clicks", { count: 0 });
+storiesOf('FooBar', module).add('I get state', () => {
+  const [count, set] = useState('clicks', 0);
 
   return (
     <div>
-      <button onClick={() => set({ count: (store.count += 1) })}>
-        Click Me
-      </button>
-      <div>{`I was clicked ${store.count} time(s)`}</div>
+      <button onClick={() => set(count + 1)}>Click Me</button>
+      <div>{`I was clicked ${count} time(s)`}</div>
     </div>
   );
 });
