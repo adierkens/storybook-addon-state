@@ -4,7 +4,8 @@
   "description": "A storybook addon to keep state",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "tsc",
