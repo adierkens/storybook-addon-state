@@ -30,5 +30,9 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "keywords": [
+    "storybook-addon",
+    "data-state"
+  ]
 }
