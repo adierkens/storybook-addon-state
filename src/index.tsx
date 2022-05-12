@@ -17,8 +17,9 @@ export default function useState<T>(
   const actualVals = stores[name] === undefined ? store : stores[name];
   stores[name] = actualVals;
 
-  const update = (newState: T) => {
-    stores[name] = newState;
+  const update = (newState: T | (oldState: T) => T) => {
+    const newVal = typeof newState === "function" ? newState(stores[name]) : newState;
+    stores[name] = newVal;
     addons.getChannel().emit(FORCE_RE_RENDER);
   };
   update.toString = () => `set${capitalizeFirstLetter(name)}(newState)`;
