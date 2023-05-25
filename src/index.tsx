@@ -1,4 +1,4 @@
-import addons from '@storybook/addons';
+import { addons } from '@storybook/preview-api';
 import { FORCE_RE_RENDER, STORY_CHANGED } from '@storybook/core-events';
 
 let stores: Record<string, any> = {};
